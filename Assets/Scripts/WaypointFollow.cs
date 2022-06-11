@@ -7,15 +7,17 @@ public class WaypointFollow : MonoBehaviour
     //
     public GameObject[] waypoints;
     int currentWP = 0;
-    //
+    //velocidade do cubo
     public float speed = 1.0f;
+    //precisao
     public float accuracy = 1.0f;
+    //velocidade de rotação 
     public float rotSpeed = 0.4f;
 
     // Start is called before the first frame update
     void Start()
     {
-        //
+        //faz o cubo encontrar objetos com a tag waypoint
         waypoints = GameObject.FindGameObjectsWithTag("waypoint");
     }
 
